@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	 version="3.0">
+             
+    <!-- ServletAuth -->         
+    <servlet>
+        <servlet-name>sc</servlet-name>
+        <servlet-class>Controller.ServletAuth</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sc</servlet-name>
+        <url-pattern>/connexion</url-pattern>
+    </servlet-mapping>
+    
+    <!-- ServletUploader -->
+    <servlet>
+        <display-name>Uploader</display-name>
+        <servlet-name>Uploader</servlet-name>
+        <servlet-class>Controller.Uploader</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Uploader</servlet-name>
+        <url-pattern>/Uploader</url-pattern>
+    </servlet-mapping>
+    
+    <!-- ServletRegiter -->
+    <servlet>
+        <display-name>Register</display-name>
+        <servlet-name>sr</servlet-name>
+        <servlet-class>Controller.ServletRegiter</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sr</servlet-name>
+        <url-pattern>/ServletRegiter</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
